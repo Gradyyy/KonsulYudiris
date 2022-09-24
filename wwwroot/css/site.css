@@ -1,0 +1,147 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: sandybrown;
+}
+
+.bg {
+    background-image: url('../NewFolder/biHome.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+    .bg img {
+    }
+
+.text-center {
+    height: 100vh;
+    width: 100vw;
+}
+
+    .text-center h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        letter-spacing: 4px;
+        word-spacing: 39px;
+        color: whitesmoke;
+        font-weight: bold;
+        text-decoration: overline;
+        font-style: oblique;
+        font-variant: normal;
+        text-transform: none;
+        display: flex;
+        text-align: left;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 100px;
+        font-size:60px;
+    }
+
+    .text-center p {
+        font-family: 'Goudy Old Style';
+        color: azure;
+        text-align: left;
+        display: flex;
+        font-size: 30px;
+        margin: 0px;
+        justify-content: left;
+        margin-left: 100px;
+        font-weight: 500;
+    }
+
+text-center {
+}
+
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.about{
+    margin-left: 100px;
+    
+}
+
+.hukum{
+    margin-left: 100px;
+}
+.pidana{
+    
+    border-radius: 10px;
+}
+
+    .pidana h3 {
+        font-family: 'MS Gothic';
+        font-size: 40px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+    }
+
+.pidana p{
+    margin:0;
+    padding:3px;
+}
+.perdata h3 {
+    font-family: 'MS Gothic';
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.navbar-brand img{
+    height: 100px;
+}
+
+.table{
+    margin-left: 100px;
+}
+
+.atas{
+    margin-left: 100px;
+}
+.atas2{
+    margin-left: 100px;
+}
+
+.searchd{
+    margin-left: 100px;
+}
+
+.navbar-nav{
+    margin-left: 100px;
+}
+

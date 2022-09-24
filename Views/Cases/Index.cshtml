@@ -1,0 +1,49 @@
+﻿@model IEnumerable<KonsulYudiris.Models.Case>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="atas2">
+    <h1>Ongoing Case</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CaseHolder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consultant)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CaseType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CaseHolder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Consultant)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CaseType)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CaseID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CaseID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CaseID">Finished</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

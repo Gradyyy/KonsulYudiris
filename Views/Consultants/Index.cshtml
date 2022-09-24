@@ -1,0 +1,55 @@
+﻿@model IEnumerable<KonsulYudiris.Models.Consultant>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="atas">
+    <h1>Consultant List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ConsultantName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConsultantPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConsultantSpecialty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConsultantDetails)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsultantName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsultantPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsultantSpecialty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsultantDetails)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ConsultantID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ConsultantID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ConsultantID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
